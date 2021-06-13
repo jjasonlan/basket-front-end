@@ -2,21 +2,86 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+.container {
+  background-image: url('/background.png');
   background-color: #282c34;
+  background-size: cover;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.886);
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 50px 30px;
+  height: 50px;
+  width: auto;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.sponsor {
+  margin: 50px;
+  height: 25px;
+  width: auto;
+}
+
+.loginForm input {
+  margin: 5px;
+  width: initial;
+  position: relative;
+  display: block;
+  height: 18px;
+  border-radius: 4px;
+  background-color: white;
+  border: solid 1px transparent;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all .1s ease-in-out;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginForm input.password {
+  font-size: 24px;
+  font: small-caption;
+
+}
+
+.loginForm input.button {
+  position: relative;
+  display: block;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #004b9b;
+  border: solid 1px transparent;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  padding: 10px 2px;
+  margin-top: 10px;
+}
+
+.loginForm input.button:hover {
+  transition: all .1s ease-in-out;
+  background-color: rgba(0, 70, 169, 0.921);
 }
